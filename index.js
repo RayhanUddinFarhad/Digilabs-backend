@@ -41,6 +41,8 @@ async function run() {
       
 
 
+        //Here started functionality for heading text
+
         app.post ('/header', async (req, res) => {
             const body = req.body;
             const count = await heading.countDocuments(); 
@@ -73,6 +75,10 @@ async function run() {
 
 
         })
+
+
+
+        //Here started functionality for Logo
         app.post('/image', async (req, res) => {
             const imageURL = req.body;
             
@@ -103,6 +109,9 @@ async function run() {
                 res.status(500).send('Error occurred');
             }
         });
+
+
+        //Here started functionality for email 
 
         app.post ('/emails', async (req, res) => { 
 
