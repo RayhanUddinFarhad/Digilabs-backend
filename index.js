@@ -7,7 +7,6 @@ require('dotenv').config();
 
 app.use(cors())
 
-// Replace 'your-mongodb-connection-string' with your actual MongoDB connection string
 
 // Middleware to parse JSON in request body
 app.use(express.json());
